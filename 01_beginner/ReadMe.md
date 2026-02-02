@@ -14,7 +14,7 @@ At this stage, the emphasis is on:
 ## Concepts Covered
 
 ### Core Language Building Blocks
-- Variables
+- [Variables](01_Core_Language/01_Variables.cs)
 - Primitive types (`int`, `double`, `bool`, `char`, `string`)
 - Type assignment and initialization
 
