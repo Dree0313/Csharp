@@ -118,8 +118,8 @@ Solution: */
   Console.WriteLine($"Employee: {firstName}, Salary: {salary}");
 
 /*
-Expected Result:
-  Employee: Alice, Salary: 80000 */
+Expected Result: */
+  Employee: Alice, Salary: 80000
 __________________________________________________________________________
 /*
 7 var Keyword (Type Inference)
@@ -135,7 +135,7 @@ Solution: */
   var department = "HR";
 
 /*
-Expected Result: 
+Explanation: 
   C# infers department is a string
   Type is still fixed at compile time */
 
