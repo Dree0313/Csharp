@@ -8,7 +8,7 @@ __________________________________________________________________________
 Scenerio:
   You are a junior C# developer at a company. Your application needs to 
   store and work with employee information such as names, ages, salaries,
-  and employment status.
+  and employment status. */
 
 __________________________________________________________________________
 /* 
