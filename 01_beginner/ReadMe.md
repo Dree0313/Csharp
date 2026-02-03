@@ -16,7 +16,7 @@ At this stage, the emphasis is on:
 ### Core Language Building Blocks
 - [Variables](01_Core_Language/01_Variables.cs)
 - [Primitive types (`int`, `double`, `bool`, `char`, `string`)](01_Core_Language/02_Primitive_types_(int,_double,_bool,_char,_string).cs)
-- Type assignment and initialization
+- [Type assignment and initialization](01_Core_Language/03_Type_assignment_and_initialization.cs)
 
 ### Control Flow
 - `if / else`
