@@ -19,7 +19,7 @@ At this stage, the emphasis is on:
 - [Type assignment and initialization](01_Core_Language/03_Type_assignment_and_initialization.cs)
 
 ### Control Flow
-- `if / else`
+- [`if / else`](02_Control_Flow/01_if_else.cs)
 - `switch`
 - `for`
 - `foreach`
