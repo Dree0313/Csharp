@@ -38,129 +38,192 @@ Solution: */
 
 __________________________________________________________________________
 /*
-2 Declaring and Initializing in One Step
-  What it does: Creates a variable and assigns it a value immediately
-  Why use it: Most common and concise way to work with variables
-  Syntax: dataType variableName = value; */
+2 if / else Statement
+  What it does: Runs one block if the condition is true, another if false
+  Why use it: Handles two possible outcomes
+  Syntax:
+    if (condition)
+    {
+      code;
+    }
+    else
+    {
+      code;
+    } */
 __________________________________________________________________________
 /*
 Problem:
-  Store an employee's first name at the same time as delaring the variable
+  Problem: 
+  Determine if an employee is active or inactive
 
 Solution: */
-  string firstName = "Alice";
+  if (isActive)
+  {
+    Console.WriteLine("Employee is active");
+  }
+  else
+  {
+    Console.WriteLine("Employee is inactive");
+  }
 
-/*
-Expected Result:
-  firstName contains "Alice" */
+/* Explanation:
+  Console outputs Employee is active if the employee is set to active,
+    otherwise, it outputs Employee is inactive */
 
 __________________________________________________________________________
 /*
-3 Multiple Variables of the Same Type
-  What it does: Declares and initializes multiple variables on one line
-  Why use it: Saves space and keeps related data together
-  Syntax: dataType var1 = value1, var2 = value2; */
+3 Using comparison values in conditions
+  What it does: Compare values in conditions
+  Why use it: Makes decisions based on numeric or logical comparisons
+ */
 __________________________________________________________________________
 /*
 Problem:
-  Store two employees' ages on a single line
+  Check if an employee is eligible for a bonus (salary under 80000)
 
 Solution: */
-  int age1 = 28, age2 = 35;
+  double salary = 75000.50;
 
-/*
-Expected result:
-  age1= 28
-  age2 = 35*/
-
-__________________________________________________________________________
-/*
-4 Using var for Type Inference
-  What it does: Lets C# infer the type of a variable from its initial 
-    value
-  Why use it: Reduces redundancy, especially for long type names
-  Syntax: var variableName = value; */
-__________________________________________________________________________
-/*
-Problem:
-  Store the department name without explicitly writing 'string'
-
-Solution: */
-  var department = "HR";
-
-/*
-Expected Result:
-  department is inferred as string
-  Type is still fixed at compile time*/
-__________________________________________________________________________
-/*
-5 Updating Multiple Types
-  What it does: Assign new values to variables of different types
-  Why use it: Data often changes, reflecting real-world updates */
-__________________________________________________________________________
-/*
-Example: */
-  int employeeId = 101;
-  string title = "Developer";
-  double bonus = 5000.00;
-  bool isActive = true;
-
-// Update values
-  title = "Senior Developer;
-  bonus = 7500.00;
-  isActive = false;
+  if (salary < 80000)
+  {
+    Console.WriteLine("Employee is eligible for a bonus");
+  }
+  else
+  {
+    Console.WriteLine("Employee is not eligible for a bonus");
+  }
 
 /*
 Explanation:
-  You can reassign values as long as the type matches */
+  < compares numeric values */
 
 __________________________________________________________________________
 /*
-6 Outputting Initialized Variables
-  What it does: Shows assignment values on the console
-  Why use it: Verify that assignment and initialization worked correctly 
+4 Mulitple Conditions with else if
+  What it does: Tests multiple conditions in order
+  Why use it: Handles more than two outcomes */
+__________________________________________________________________________
+/*
+Problem:
+  Categorize employee performance based on grade
+
+Solution: */
+  char grade = 'B';
+
+  if (grade == 'A')
+  {
+    Console.WriteLine("Excellent performance");
+  }
+  else if (grade == 'B')
+  {
+    Console.WriteLine("Good performance");
+  }
+  else if (grade == 'C')
+  {
+    Console.WriteLine("Satisfactory performance");
+  }
+  else
+  {
+    Console.WriteLine("Needs improvement");
+  }
+
+/*
+Expected Result:
+  Good performance */
+__________________________________________________________________________
+/*
+5 Logical Operators (AND / OR)
+  What it does: Combines multiple conditions
+  Why use it: Makes more precise decisions */
+__________________________________________________________________________
+/*
+Problem: 
+ Check if an employee qualifies for promotion */
+
+/*
+Solution: */
+  int yearsAtCompany = 3;
+  bool hasGoodReviews = true;
+
+  if (yearsAtCompany >= 2 && hasGoodReviews)
+  {
+    Console.WriteLine("Employee qualifies for promotion");
+  }
+  else
+  {
+    Console.WriteLine("Employee does not qualify for promotion");
+  }
+
+/*
+Expected Result:
+  Employee qualifies for promotion */
+
+__________________________________________________________________________
+/*
+6 Nested if Statements
+  What it does: Places one if statement inside another
+  Why use it: Handles dependent decisions
   */
 __________________________________________________________________________
 /*
 Problem:
-  Display employee information after updtes
+  Check promotion eligibility only if employee is active
 
 Solution: */
-  Console.WriteLine(employeeID);
-  Console.WriteLine(firstName);
-  Console.WriteLine(title);
-  Console.WriteLine(bonus);
-  Console.WriteLine(isActive);
+  if (isActive)
+  {
+    if (yearAtCompany >= 2)
+    {
+      Console.WriteLine("Active employee eligible for promotion");
+    }
+    else
+    {
+      Console.WriteLine("Active employee not eligible yet");
+    }
+  }
+  else
+  {
+    Console.WriteLine("Inactive employee not eligible");
+  }
 
-//Expected Result: 
-  101
-  Alice
-  Senior Developer
-  7500
-  False
+/* 
+Explanation: 
+  Inner condiitons run only if the outer condition is true */
 __________________________________________________________________________
 /*
-7 String Interpolation with Initialized Variables
-  What it does: Combines assigned values into a readable summary
-  Why use it: Professional and concise output */
+7 Useing if / else without Output
+  What it does: Displays different messages based on conditions
+  Why use it: Communicates program decisions clearly */
 __________________________________________________________________________
 /*
 Problem:
-  Display a summary of employee details
+  Display employee status summary
 
 Solution: */
-  Console.WriteLine($"Employee {employeeId): {firstName}, Title: {title}, Bonus: {bonus}, Active: {isActive}");
+  string firstName = "Alice";
 
-//Expected Result: 
-  Employee 101: Alice, Title: Senior Developer, Bonus: 7500, Active: False
+  if (isActive)
+  {
+    Console.WriteLine($"{firstName} is currently active."};
+  }
+  else
+  {
+    Console.WriteLine($"{firstName} is currently inactive.");
+  }
+
+/*
+Expected Result: 
+  Cutputs to console that Alice is currently acitve or Alice is currently
+    inactive depending on her status */
 
 __________________________________________________________________________
 /*
 Key Rules to Remember
-  Variables must be declared before use
-  You can assign a value later or initilize immediately
-  Once declared, the variable's type cannot change
-  Using var lets C# infer the type, but the type is fixed after 
-    initialization
-  Reassign values freely as long as the type matches
-  Proper initialization avoids runtime errors */
+  Conditions must evaluate to true or false
+  Comparison uses ==, not =
+  Curly braces {} define the code block
+  else if is checked only if previous conditions fail
+  Logical operators:
+    && → AND
+    || → OR
+  if / else controls program flow */
