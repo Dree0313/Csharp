@@ -20,7 +20,7 @@ At this stage, the emphasis is on:
 
 ### Control Flow
 - [`if / else`](02_Control_Flow/01_if_else.cs)
-- `switch`
+- [`switch`](02_Control_Flow/02_switch.cs)
 - `for`
 - `foreach`
 - `while`
