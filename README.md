@@ -1,33 +1,5 @@
 # Csharp
-Tier 1: Beginner (Syntax Literacy)
 
-This is language fluency, not understanding.
-
-You can write C# without knowing why it works.
-
-Subjects
-
-Variables & primitive types
-
-if / else, switch
-
-for, foreach, while
-
-Methods & parameters
-
-Classes & objects
-
-Basic constructors
-
-Properties (get / set)
-
-List<T>, Dictionary<TKey,TValue>
-
-Simple exception handling (try/catch)
-
-Console I/O
-
-🧠 This is knowing how to speak sentences.
 
 Tier 2: Intermediate (Object-Oriented Thinking)
 
