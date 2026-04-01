@@ -1,35 +1,7 @@
 # Csharp
 
 
-Tier 2: Intermediate (Object-Oriented Thinking)
 
-👉 Most bootcamp grads and junior devs live here
-
-Now you understand structure, not just syntax.
-
-Subjects
-
-Encapsulation, inheritance, polymorphism
-
-Interfaces vs abstract classes
-
-Reference vs value types (basic)
-
-null handling
-
-Basic generics
-
-Enums & structs
-
-Dependency injection (usage, not design)
-
-Basic async/await
-
-Simple LINQ (Where, Select)
-
-Unit testing basics
-
-🧠 This is understanding how objects relate and why.
 
 Tier 3: Advanced (Professional Engineer Level)
 
