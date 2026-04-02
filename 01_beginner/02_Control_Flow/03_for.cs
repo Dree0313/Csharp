@@ -48,7 +48,7 @@ Expected Result:
 
 __________________________________________________________________________
 /*
-2 Undderstanding the Three Parts
+2 Understanding the Three Parts
   What it does: Breaks down initialization, condition, and increment
   Why use it: Helps you control loop behavior precisely */
 __________________________________________________________________________
