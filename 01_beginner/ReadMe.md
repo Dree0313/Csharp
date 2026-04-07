@@ -22,7 +22,7 @@ At this stage, the emphasis is on:
 - [`if / else`](02_Control_Flow/01_if_else.cs)
 - [`switch`](02_Control_Flow/02_switch.cs)
 - [`for`](02_Control_Flow/03_for.cs)
-- `foreach`
+- [`foreach`](02_Control_Flow/04_foreach.cs)
 - `while`
 
 ### Methods & Program Structure
