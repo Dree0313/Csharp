@@ -23,7 +23,7 @@ At this stage, the emphasis is on:
 - [`switch`](02_Control_Flow/02_switch.cs)
 - [`for`](02_Control_Flow/03_for.cs)
 - [`foreach`](02_Control_Flow/04_foreach.cs)
-- `while`
+- [`while`](02_Control_Flow/05_while.cs)
 
 ### Methods & Program Structure
 - Defining methods
